@@ -12,11 +12,13 @@ class Config(object):
 class HerokuConfig(Config):
     DEVELOPMENT = True
     DEBUG = True
+    PORT=5000
 
 
 class DevelopmentConfig(Config):
     DEVELOPMENT = True
     DEBUG = True
+    PORT=8080
 
 
 class TestingConfig(Config):
