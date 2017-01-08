@@ -1,4 +1,5 @@
-# slopespot
+# slopespot  
+[![Build Status](https://travis-ci.org/PatMulvihill/slopespot.svg?branch=master)](https://travis-ci.org/PatMulvihill/slopespot)
 
 For development make sure to start up your virtualenv:  
 `source env/bin/activate`

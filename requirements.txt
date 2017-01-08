@@ -4,12 +4,14 @@ Flask==0.12
 Flask-Migrate==2.0.2
 Flask-Script==2.0.5
 Flask-SQLAlchemy==2.1
+Flask-Testing==0.6.1
 gunicorn==19.6.0
 heroku==0.1.4
 itsdangerous==0.24
 Jinja2==2.9.1
 Mako==1.0.6
 MarkupSafe==0.23
+psycopg2==2.6.2
 py==1.4.32
 pytest==3.0.5
 python-dateutil==1.5
