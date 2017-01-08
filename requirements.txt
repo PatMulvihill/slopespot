@@ -2,6 +2,7 @@ alembic==0.8.9
 click==6.7
 Flask==0.12
 Flask-Migrate==2.0.2
+Flask-Restless==0.17.0
 Flask-Script==2.0.5
 Flask-SQLAlchemy==2.1
 Flask-Testing==0.6.1
@@ -11,11 +12,14 @@ itsdangerous==0.24
 Jinja2==2.9.1
 Mako==1.0.6
 MarkupSafe==0.23
+mimerender==0.6.0
 psycopg2==2.6.2
 py==1.4.32
 pytest==3.0.5
-python-dateutil==1.5
+python-dateutil==2.6.0
 python-editor==1.0.3
+python-mimeparse==1.6.0
 requests==2.12.4
+six==1.10.0
 SQLAlchemy==1.1.4
 Werkzeug==0.11.15

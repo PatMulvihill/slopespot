@@ -1,6 +1,8 @@
+import os
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-import os
+from flask_restless import APIManager
 
 def get_app(settings=None):
     app = Flask(__name__)
@@ -15,6 +17,11 @@ def get_db(app):
 
 app = get_app(settings=os.environ['APP_SETTINGS'])
 db = get_db(app)
+manager = APIManager(app, flask_sqlalchemy_db=db)
+
+def configure_routes():
+    from model import Mountain
+    manager.create_api(Mountain, methods=['GET', 'POST', 'DELETE'])
 
 @app.route('/')
 def hello():
@@ -25,5 +32,7 @@ def hello_name(name):
     return "Hello {}!".format(name)
 
 if __name__ == '__main__':
-    pass
-    #app.run(host='0.0.0.0', port=app.config['PORT'])
+    #pass
+    configure_routes()
+    db.create_all()
+    app.run(host='0.0.0.0', port=app.config['PORT'])
